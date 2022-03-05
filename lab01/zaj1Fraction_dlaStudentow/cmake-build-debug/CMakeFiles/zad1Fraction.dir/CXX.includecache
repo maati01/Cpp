@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mateu/Desktop/studia/semestr 4/C++/lab01/zaj1Fraction_dlaStudentow/fraction.cpp
+iostream
+-
+cstring
+-
+cctype
+-
+fraction.h
+C:/Users/mateu/Desktop/studia/semestr 4/C++/lab01/zaj1Fraction_dlaStudentow/fraction.h
+
+C:/Users/mateu/Desktop/studia/semestr 4/C++/lab01/zaj1Fraction_dlaStudentow/fraction.h
+iosfwd
+-
+string
+-
+
