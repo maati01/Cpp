@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+525c88f38d6cc52d4b29e802d7991c28 CMakeFiles/format
+312739a0157dc4eb588a711450d83412 CMakeFiles/run
+6741b994b85373a7480b355d43886b69 CMakeFiles/zip
+911e9ce75609f193c5466ac5a742759a tests/CMakeFiles/run_tests

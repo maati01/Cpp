@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mateu/Desktop/studia/semestr 4/Cpp/lab02/zaj2Matrix_dlaStudentow/main.cpp
+iostream
+-
+matrix.h
+C:/Users/mateu/Desktop/studia/semestr 4/Cpp/lab02/zaj2Matrix_dlaStudentow/matrix.h
+
+C:/Users/mateu/Desktop/studia/semestr 4/Cpp/lab02/zaj2Matrix_dlaStudentow/matrix.cpp
+iostream
+-
+string
+-
+matrix.h
+C:/Users/mateu/Desktop/studia/semestr 4/Cpp/lab02/zaj2Matrix_dlaStudentow/matrix.h
+
+C:/Users/mateu/Desktop/studia/semestr 4/Cpp/lab02/zaj2Matrix_dlaStudentow/matrix.h
+iosfwd
+-
+iostream
+-
+matrixElement.h
+C:/Users/mateu/Desktop/studia/semestr 4/Cpp/lab02/zaj2Matrix_dlaStudentow/matrixElement.h
+
+C:/Users/mateu/Desktop/studia/semestr 4/Cpp/lab02/zaj2Matrix_dlaStudentow/matrixElement.h
+
