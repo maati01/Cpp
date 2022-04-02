@@ -6,7 +6,6 @@ using namespace std;
 #include "matrix.h"
 
 TwoDimensionMatrix::TwoDimensionMatrix(): matrix(){
-//    std::fill(matrix[0], matrix[0] + size * size, 0);
 }
 
 TwoDimensionMatrix::TwoDimensionMatrix(const TwoDimensionMatrix &matrix):  matrix() {
@@ -50,6 +49,7 @@ TwoDimensionMatrix &TwoDimensionMatrix::operator*=(MatrixElement number) {
             this->matrix[i][j] *= number;
         }
     }
+    return *this;
 }
 
 TwoDimensionMatrix TwoDimensionMatrix::operator&&(const TwoDimensionMatrix &matrix) const {
@@ -74,7 +74,12 @@ TwoDimensionMatrix operator+(const TwoDimensionMatrix& matrix1, const TwoDimensi
     return tmp;
 }
 
-
+void TwoDimensionMatrix::operator()(TwoDimensionMatrix& matrix)
+{
+    for (int i = 0; i < size; i++)
+        for (int j = 0; j < size; j++)
+            (*this)[i][j] = matrix[i][j];
+}
 
 #ifndef _MSC_FULL_VER // if not Visual Studio Compiler
     #warning "Klasa jest do zaimplementowania. Instrukcja w pliku naglowkowym"

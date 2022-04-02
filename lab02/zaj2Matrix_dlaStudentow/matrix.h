@@ -82,20 +82,21 @@ public: // methods
     TwoDimensionMatrix();
     TwoDimensionMatrix(const TwoDimensionMatrix &matrix);
     explicit TwoDimensionMatrix(const MatrixElement matrix[size][size]);
-    [[nodiscard]] int get(int row, int column) const {return matrix[row][column];};
+    MatrixElement get(int row, int column) const {return matrix[row][column];};
     static constexpr size_t getSize(){ return size;}
     MatrixElement *operator[](int i);
     const MatrixElement *operator[](int i) const;
     friend ostream &operator<<(ostream& os, const TwoDimensionMatrix &matrix);
     friend istream &operator>>(istream & is, const TwoDimensionMatrix &matrix);
+    friend TwoDimensionMatrix operator+(const TwoDimensionMatrix& matrix1, const TwoDimensionMatrix& matrix2);
     TwoDimensionMatrix &operator*=(MatrixElement number);
     TwoDimensionMatrix operator&&(const TwoDimensionMatrix& matrix) const;
-
+    void operator()(TwoDimensionMatrix& sourceMatrix);
 
     explicit operator size_t () const { return size; };
 private: // methods:
 
 };
-TwoDimensionMatrix operator+(const TwoDimensionMatrix& matrix1, const TwoDimensionMatrix& matrix2);
+
 
 #endif // MATRIX_H
